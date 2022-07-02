@@ -1,9 +1,22 @@
-<nav class="flex justify-between py-10 px-32">
-    <div class="flex flex-row gap-9 text-center items-center">
-        <a href="#about" class="text-nav-color">About</a>
-        <a href="#skills" class="text-nav-color">Skills</a>
-        <a href="#" class="text-nav-color">Experiences</a>
-        <a href="#" class="text-nav-color">Works</a>
+<nav class="flex justify-between py-10 md:px-32 px-10">
+    <button class="md:hidden">
+        <i class="fas fa-regular fa-bars text-title-secondary text-2xl"></i>
+    </button>
+    <div class="hidden md:block">
+        <ul class="flex md:flex-row flex-col md:gap-9 text-center items-center">
+            <li>
+                <a href="#about" class="text-nav-color">About</a>
+            </li>
+            <li>
+                <a href="#skills" class="text-nav-color">Skills</a>
+            </li>
+            <li>
+                <a href="#" class="text-nav-color">Experiences</a>
+            </li>
+            <li>
+                <a href="#" class="text-nav-color">Works</a>
+            </li>
+        </ul>
     </div>
     <div class="flex flex-row-reverse">
         <button class="bg-primary rounded-md px-3 py-2 mr-5">

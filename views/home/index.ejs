@@ -11,29 +11,29 @@
 </head>
 <body class="bg-main">
     <%- include('navbar') %> 
-
-    <div class="mx-28">
-        <div id="about" class="grid grid-cols-2 px-10">
+    
+    <div class="md:mx-28">
+        <div id="about" class="grid md:grid-cols-2 px-10">
             <div class="pr-4 self-center">
                 <p class="text-secondary text-xl">Hello, i am</p>
-                <div class="grid text-6xl text-primary grid-flow-col auto-cols-max gap-3 my-5">
-                    <div class="col-auto"><p>&gt;</p></div>
+                <div class="flex md:text-6xl text-4xl text-primary gap-3 my-5">
+                    <div class=""><p>&gt;</p></div>
                     <div class=""><p>Ifaldzi Alwi H</p></div>
                 </div>
-                <p class="text-secondary text-lg mr-8">I'm a <span class="font-bold">software engineer</span> who focused on <span class="font-bold"> backend  engineer</span> and interesed on <span class="font-bold"> game development </span>. Happy to learn something new especially about informatics stuff</p>
+                <p class="text-secondary text-lg md:mr-8">I'm a <span class="font-bold">software engineer</span> who focused on <span class="font-bold"> backend  engineer</span> and interesed on <span class="font-bold"> game development </span>. Happy to learn something new especially about informatics stuff</p>
                 <div class="text-secondary text-4xl mx-1 mt-2">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="https://github.com/ifaldzi" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
     
-            <div class="justify-self-center">
+            <div class="justify-self-center order-first md:order-last">
                 <img src="./assets/img/profile.png" alt="">
             </div>
         </div>
     
-        <div id="skills" class="mt-10">
-            <p class="w-1/4 text-primary font-semibold text-center text-2xl mx-auto">Skills</p>
+        <div id="skills" class="mt-20">
+            <p class="md:w-1/4 text-primary font-semibold text-center text-2xl mx-auto">Skills</p>
             <p class="w-1/2 text-secondary text-center text-lg mx-auto mt-2">
                 This my skill which i get from my entire life of endless suffering
             </p>
@@ -48,12 +48,12 @@
             </div>
         </div>
 
-        <div class="mt-20">
-            <p class="w-1/4 text-primary font-semibold text-center text-2xl mx-auto mb-10">Experiences</p>
+        <div class="mt-20 mx-10">
+            <p class="md:w-1/4 text-primary font-semibold text-center text-2xl mx-auto mb-10">Experiences</p>
 
             <% experiences.forEach(experience => { %>
-                <div class="grid grid-cols-2 gap-10">
-                    <div class="relative w-4/5 justify-self-end">
+                <div class="grid md:grid-cols-2 md:gap-10 gap-5 mb-5">
+                    <div class="relative md:w-4/5 justify-self-end">
                         <img src="./assets/img/mac-window.png" alt="" class="">
                         <img src="./assets/img/<%= experience.image || 'image-placeholder.jpg'  %> " alt="" class="screen rounded-b-lg">
                     </div>
@@ -67,13 +67,13 @@
             <% }) %>
         </div>
 
-        <div class="mt-20">
-            <p class="w-1/4 text-primary font-semibold text-center text-2xl mx-auto mb-10">Previous Works</p>
+        <div class="mt-20 mx-10">
+            <p class="md:w-1/4 text-primary font-semibold text-center text-2xl mx-auto mb-10">Previous Works</p>
 
-            <div class="grid grid-cols-2 gap-x-32 gap-y-10">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-x-32 gap-y-10">
                 <% previousWorks.forEach(work => { %>
                     <div class="grid">
-                        <img src="./assets//img/<%= work.image || 'image-placeholder.jpg' %> " alt="" class="rounded-xl">
+                        <img src="./assets//img/<%= work.image || 'image-placeholder.jpg' %> " alt="" class="rounded-xl" width="100%">
     
                         <div class="grid grid-flow-col-dense mt-5 text-2xl place-content-between">
                             <h3 class="text-title-secondary font-bold"><%= work.header %> </h3>
