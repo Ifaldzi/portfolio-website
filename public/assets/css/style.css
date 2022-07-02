@@ -1,0 +1,41 @@
+.bg-main {
+    /* height: 100%; */
+    background: linear-gradient(180deg,#041F31 43.75%, #267365 100%);
+    background-repeat: no-repeat;
+}
+
+.text-nav-color {
+    color: #F2CB05;
+}
+
+.text-primary {
+    background: linear-gradient(90deg, #F2CB05 0%, #F29F05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.text-secondary {
+    color: #BDEBEA
+}
+
+.text-title-secondary {
+    color: #8EB8BC
+}
+
+.bg-primary {
+    background: linear-gradient(90deg, #F2CB05, #F29F05);
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.screen {
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+    height: 75%;
+    width: 90%;
+}

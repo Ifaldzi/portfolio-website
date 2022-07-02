@@ -1,0 +1,46 @@
+[
+    {
+        "name": "NODE JS",
+        "image": "node_js.svg"
+    },
+    {
+        "name": "JAVASCRIPT",
+        "image": "javascript.svg"
+    },
+    {
+        "name": "LARAVEL",
+        "image": "laravel.svg"
+    },
+    {
+        "name": "PHP",
+        "image": "php.svg"
+    },
+    {
+        "name": "CODEIGNITER",
+        "image": "codeigniter.svg"
+    },
+    {
+        "name": "KOTLIN",
+        "image": "kotlin.svg"
+    },
+    {
+        "name": "REST API",
+        "image": "API.svg"
+    },
+    {
+        "name": "UNITY",
+        "image": "unity.svg"
+    },
+    {
+        "name": "MY SQL",
+        "image": "mysql.svg"
+    },
+    {
+        "name": "EXPRESS JS",
+        "image": "express.svg"
+    },
+    {
+        "name": "MONGO DB",
+        "image": "mongodb.svg"
+    }
+]

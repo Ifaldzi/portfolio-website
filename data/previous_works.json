@@ -1,0 +1,24 @@
+[
+    {
+        "header": "Zaidan Arrafif",
+        "image": "zaidan-arrafif-screen.png",
+        "repo_link": null,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eos, temporibus quae cupiditate dolores voluptas maiores",
+        "tech_images": [
+            "laravel.svg",
+            "kotlin.svg",
+            "android-studio.svg"
+        ]
+    },
+    {
+        "header": "Backend Side For OpenCommiss Web",
+        "repo_link": null,
+        "image": null,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eos, temporibus quae cupiditate dolores voluptas maiores",
+        "tech_images": [
+            "node_js.svg",
+            "express.svg",
+            "mysql.svg"
+        ]
+    }
+]
