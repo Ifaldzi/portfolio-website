@@ -1,0 +1,28 @@
+name: cd
+
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Deploy Using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_IP }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            cd projects/portfolio-website
+            git pull origin master
+            git status
+            npm install
+            pm2 reload "web portfolio"
+            pm2 restart "web portfolio"
