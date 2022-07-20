@@ -39,3 +39,15 @@ p, a {
     height: 75%;
     width: 90%;
 }
+
+.link-disabled {
+    cursor: not-allowed;
+}
+
+span.link-disabled a {
+    pointer-events: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

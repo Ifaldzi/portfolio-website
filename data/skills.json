@@ -24,6 +24,10 @@
         "image": "kotlin.svg"
     },
     {
+        "name": "JAVA",
+        "image": "java.svg"
+    },
+    {
         "name": "REST API",
         "image": "API.svg"
     },
