@@ -20,9 +20,9 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           script: |
-            cd ${{ secrets.PROJECT_LOCATION }}
+            cd projects/ifal_projects/portfolio-website
             git pull origin master
             git status
             npm install
-            pm2 reload "web-portfolio"
-            pm2 restart "web-portfolio"
+            pm2 reload "ifal-portfolio"
+            pm2 restart "ifal-portfolio"
