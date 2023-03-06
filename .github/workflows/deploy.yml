@@ -17,10 +17,10 @@ jobs:
         with:
           host: ${{ secrets.SSH_IP }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           script: |
-            cd projects/portfolio-website
+            cd ${{ secrets.PROJECT_LOCATION }}
             git pull origin master
             git status
             npm install
