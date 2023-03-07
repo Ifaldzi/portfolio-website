@@ -6,7 +6,7 @@
   "scripts": {
     "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css --watch",
     "start": "node index",
-    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css && nodemon index -e ejs,js,json"
+    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css && nodemon index -e ejs,js,json --config ./nodemon.json"
   },
   "keywords": [],
   "author": "",

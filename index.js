@@ -12,7 +12,9 @@ app.use(express.static("./public"));
 app.get("/", (req, res) => {
   const skills = require("./data/skills.json");
   const experiences = require("./data/experiences.json");
-  const previousWorks = require("./data/previous_works.json");
+  const previousWorks = require('./data/previous_works.json').sort((a, b) => {
+    return b.year - a.year;
+  });
 
   const data = { skills, experiences, previousWorks };
 

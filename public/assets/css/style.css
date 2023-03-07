@@ -24,6 +24,14 @@
     color: #8EB8BC
 }
 
+.text-tag {
+    color: #1F2626
+}
+
+.bg-dropdown {
+    background-color: #062C46
+}
+
 .bg-primary {
     background: linear-gradient(90deg, #F2CB05, #F29F05);
 }

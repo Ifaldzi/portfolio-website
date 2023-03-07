@@ -1,0 +1,5 @@
+{
+  "events": {
+    "restart": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css"
+  }
+}
