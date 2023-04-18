@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
   res.render("home/index", data);
 });
 
+app.get('*', (req, res) => {
+  return res.redirect('/');
+});
+
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
 });
