@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css --watch",
+    "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css",
     "start": "node index",
     "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/tailwind.css && nodemon index -e ejs,js,json --config ./nodemon.json"
   },
