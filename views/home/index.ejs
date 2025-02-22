@@ -31,7 +31,7 @@
                 </div>
                 <p class="text-secondary text-lg md:mr-8">I'm a <span class="font-bold">software engineer</span> who
                     focused on <span class="font-bold"> backend engineer</span> and interested on <span
-                        class="font-bold">game development</span>. Love coding at the first sight and happy to learn something new especially about programming stuff.</p>
+                        class="font-bold">fullstack development</span>. Love coding at the first sight and happy to learn something new especially about programming stuff. Currently trying to master of all elements 🦸🏻.</p>
                 <div class="text-secondary text-4xl mx-1 mt-2">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="https://github.com/ifaldzi" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -86,12 +86,11 @@
                         <p class="text-secondary mb-3">
                             <%= experience.date %>
                         </p>
-                        <p class="text-secondary mb-3">
-                            <%= experience.role %>
-                        </p>
-                        <p class="text-secondary">
-                            <%= experience.description %>
-                        </p>
+                        <ul class="list-disc text-secondary">
+                            <% experience.descriptions.forEach(desc => { %>
+                                <li><%- desc %></li>
+                            <% }) %>
+                        </ul>
                     </div>
                 </div>
                 <% }) %>
@@ -167,6 +166,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <!-- <script type="module" src="https://md-block.verou.me/md-block.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag-commonmark.js"></script> 
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -199,7 +200,6 @@
                     },
                 }
             })
-            console.log(splide);
             splide.mount(window.splide.Extensions)
         })
 

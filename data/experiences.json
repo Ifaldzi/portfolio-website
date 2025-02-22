@@ -1,15 +1,27 @@
 [
     {
-        "header": "Junior Programmer at CV. Garuda Infinity Kreasindo",
+        "header": "Programmer at CV. Garuda Infinity Kreasindo",
         "date": "August 2022 - Now",
-        "role": "As a junior backend programmer",
-        "image": "garuda-logo.png"
+        "image": "garuda-logo.png",
+        "descriptions": [
+            "Developed backend systems, including REST API creation, database design, server management, and deployment processes. Contributed to frontend and mobile development as needed.",
+            "Managed internal staging and production servers.",
+            "Joined an LLM-Based SaaS application project in its early stages and successfully developed an MVP within two months",
+            "Received awards for <strong>\"Best Rookie Dev 2022\"</strong> and <strong>\"Best Attendance of The Year 2024\"</strong>"
+        ]
     },
     {
-        "header": "Internship At Digital Oasis",
+        "header": "Web Programmer Freelance",
+        "date": "2024",
+        "image": "freelance-img.jpeg",
+        "descriptions": [
+            "Developed the Backend and Admin panel for an e-commerce website for a furniture company"
+        ]
+    },
+    {
+        "header": "Web Programmer Internship At Digital Oasis",
         "image": "digitaloasis-logo.jpg",
         "date": "August 2021 - October 2021",
-        "role": "As a web programmer",
-        "description": "Contributed in LMS (Learning Monitoring System) project for one of popular university in Bandung and contributed in GIS project for government"
+        "descriptions": ["Contributed in LMS (Learning Monitoring System) project for one of popular university in Bandung and contributed in GIS project for government"]
     }
 ]

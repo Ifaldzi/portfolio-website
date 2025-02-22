@@ -8,16 +8,32 @@
     "image": "javascript.svg"
   },
   {
-    "name": "LARAVEL",
-    "image": "laravel.svg"
+    "name": "TYPESCRIPT",
+    "image": "typescript.svg"
   },
   {
-    "name": "PHP",
-    "image": "php.svg"
+    "name": "C#",
+    "image": "c-sharp.svg"
   },
   {
-    "name": "CODEIGNITER",
-    "image": "codeigniter.svg"
+    "name": "ASP .NET",
+    "image": "aspdotnet.svg"
+  },
+  {
+    "name": "Nest JS",
+    "image": "nest-js.svg"
+  },
+  {
+    "name": "POSTGRE SQL",
+    "image": "postgresql.svg"
+  },
+  {
+    "name": "React JS",
+    "image": "react.svg"
+  },
+  {
+    "name": "Docker",
+    "image": "docker.svg"
   },
   {
     "name": "KOTLIN",
@@ -48,15 +64,15 @@
     "image": "mongodb.svg"
   },
   {
-    "name": "POSTGRE SQL",
-    "image": "postgresql.svg"
+    "name": "LARAVEL",
+    "image": "laravel.svg"
   },
   {
-    "name": "TYPESCRIPT",
-    "image": "typescript.svg"
+    "name": "PHP",
+    "image": "php.svg"
   },
   {
-    "name": "C#",
-    "image": "c-sharp.svg"
+    "name": "CODEIGNITER",
+    "image": "codeigniter.svg"
   }
 ]
