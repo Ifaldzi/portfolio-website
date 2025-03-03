@@ -1,7 +1,7 @@
 [
   {
     "header": "Zaidan Arrafif",
-    "image": "zaidan-arrafif-screen.png",
+    "image": "zaidan-arrafif-screen.webp",
     "repo_link": null,
     "year": 2021,
     "description": "Zaidan Arrafif is a daily journal entry and Qur'an memorizing android app with gamification for Zaidan Educare Elementary School. This app won first place in POLBAN student scientific week 2021 category of PKM-PM.",
@@ -25,7 +25,7 @@
     "header": "Backend Side For OpenCommiss Web",
     "repo_link": "https://github.com/Ifaldzi/OpenCommisBE",
     "year": 2022,
-    "image": "opencommiss-home.png",
+    "image": "opencommiss-home.webp",
     "description": "OpenCommiss is an open commission art platform as the subject of my diploma final project in POLBAN. The platform is also integrated with payment gateway Xendit. I responsible for building the backend and my friend built the frontend using react js",
     "techs": [
       {
