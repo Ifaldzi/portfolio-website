@@ -100,14 +100,16 @@
         <div id="works" class="mt-20 mx-10">
             <p class="md:w-1/4 text-primary font-semibold text-center text-2xl mx-auto mb-10">Previous Works</p>
 
-            <div class="grid md:grid-cols-2 grid-cols-1 gap-x-36 gap-y-10">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-x-32 gap-y-10">
                 <% previousWorks.forEach(work=> { %>
                     <div class="grid">
-                        <img src="./assets//img/<%= work.image || 'image-placeholder.jpg' %> " alt=""
-                            class="rounded-xl" width="100%">
+                        <div class="aspect-[3/2] bg-gray-800 rounded-xl">
+                            <img src="./assets//img/<%= work.image || 'image-placeholder.jpg' %> " alt=""
+                                class="self-center object-contain w-full h-full" width="100%">
+                        </div>
 
-                        <div class="content-between flex flex-col">
-                            <div class="grid grid-flow-col-dense mt-5 text-2xl">
+                        <div class="content-between flex flex-col mt-5">
+                            <div class="grid grid-flow-col-dense mt-auto text-2xl">
                                 <div>
                                     <h3 class="text-title-secondary font-bold">
                                         <%= work.header %>
@@ -122,8 +124,14 @@
                                     </div>
                                 </div>
                                 <span class="justify-self-end <% if (work.repo_link === null) { %> <%= "link-disabled" %> <% }%>">
+                                    <% if(work.web_link) { %>
+                                        <a href="<%= work.web_link %> " target="_blank"
+                                            class="md:text-4xl text-2xl">
+                                            <i class="fa-solid fa-globe"></i>
+                                        </a>
+                                    <% } %>
                                     <a href="<%= work.repo_link %> " target="_blank"
-                                        class="text-4xl">
+                                        class="md:text-4xl text-2xl">
                                         <i class="fa-brands fa-github"></i>
                                     </a>
                                 </span>
@@ -133,11 +141,11 @@
                                 <%= work.description %>
                             </p>
 
-                            <div class="mt-auto">
+                            <div class="">
                                 <p class="text-secondary">Built with:</p>
                                 <div class="grid grid-flow-col auto-cols-max gap-x-5 mt-3">
                                     <% work.techs.forEach(tech=> { %>
-                                        <div class="group relative w-max flex flex-col items-center">
+                                        <div class="group relative w-max flex flex-col items-center justify-center">
                                             <img src="./assets/img/<%= tech.image %> " alt="" class="w-10">
                                             <span class="mt-4 absolute z-10 hidden w-max translate-y-full flex-col text-center items-center group-hover:flex rounded bg-dropdown text-gray-100 p-1 text-sm after:content-[''] after:absolute after:left-1/2 after:-top-[50%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-t-transparent after:border-b-[#062C46]">
                                                 <%= tech.name %>

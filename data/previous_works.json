@@ -1,5 +1,24 @@
 [
   {
+    "header": "TTD - Text To Diagram App",
+    "image": "ttd-app-screen.webp",
+    "repo_link": "https://github.com/Ifaldzi/text-to-diagram",
+    "web_link": "https://ttd.ifaldzi.me",
+    "year": 2025,
+    "description": "TTD is a mermaid diagram editor for creating unlimited mermaid diagram with realtime preview. This app use Indexed DB for storing the diagram data so all the data is saved in the client device. This app was built using Next JS, ShadCN, and Tailwind CSS",
+    "techs": [
+      {
+        "image": "next-js.svg",
+        "name": "Next JS"
+      },
+      {
+        "image": "tailwind-css.svg",
+        "name": "Tailwind CSS"
+      }
+    ],
+    "tags": ["personal project", "web app", "diagram editor"]
+  },
+  {
     "header": "Zaidan Arrafif",
     "image": "zaidan-arrafif-screen.webp",
     "repo_link": null,
